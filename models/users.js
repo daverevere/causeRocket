@@ -2,8 +2,8 @@ var mongoose = require('mongoose');
 
 var userSchema = mongoose.Schema({
 
-	name			: {type : String}
-	// zip				: {type : Number}
+	name			: {type : String},
+	zip				: {type : Number}
 
 
 });

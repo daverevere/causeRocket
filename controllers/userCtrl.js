@@ -6,8 +6,8 @@ var createUser = function(req, res){
 
 
 	var newUser = new User({
-		name			: req.body.name
-		// zip				: req.body.zip
+		name			: req.body.name,
+		zip				: req.body.zip
 
 	})
 

@@ -17,9 +17,8 @@ app.get('/', function(req, res){
   res.sendFile('/html/home.html', {root : './public'})
 });
 
-
 app.post('/api/users', userCtrl.createUser)
-app.get('/api/users', userCtrl.findUser)
+app.get('/api/users', userCtrl.findUsers)
 app.get('/api/users/:userName', userCtrl.findUsers)
 
 var port = 3000
