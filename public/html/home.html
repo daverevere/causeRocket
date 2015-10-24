@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html ng-app="App">
+<h3>{{title}}</h3>
 
-<head>
+<form ng-submit="createUser()">
+	<input ng-model="newUser.name" placeholder="Name">
 
 
-	<title>Adventure Site</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js" type="text/javascript"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js" type="text/javascript"></script>
-	
-</head>
-<body>
+	<input  type="submit" ng-click="start()">
+</form>
 
-	<nav >
-		<ul>
-			<li>Home</li>
-			<li>About</li>
-		</ul>
-	</nav>
 
-	<div ng-view>
-		<!-- Our templates will be injected here -->
-	</div>
+		
+		<div ng-repeat="user in users">
+			
+				<h1>{{user.name}}</h1>
+			
 
-	<script src="/js/main.js" type="text/javascript"></script>
-</body>
-</html>
+		</div>

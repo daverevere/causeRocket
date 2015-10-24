@@ -14,7 +14,7 @@ app.use(express.static(__dirname + '/public'));
 var userCtrl = require('./controllers/userCtrl')
 
 app.get('/', function(req, res){
-  res.sendFile('/html/home.html', {root : './public'})
+  res.sendFile('/html/index.html', {root : './public'})
 });
 
 app.post('/api/users', userCtrl.createUser)

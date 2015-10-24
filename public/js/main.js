@@ -8,7 +8,7 @@ angular.module('App')
 	
 		$routeProvider
 			.when('/', {
-				templateUrl : '/html/intro.html',
+				templateUrl : '/html/home.html',
 				controller : 'mainController'
 			})
 			.when('/part1/:user', {
