@@ -1,10 +1,15 @@
 
 .text {
-	border-width: 10px;
-	border-color: gold;
+/*	border-width: 10px !important;
+	border-color: gold !important;*/
+	border: 4px solid white;
 	border-radius: 5px;
 	padding: 10px;
+	padding-color: gold !important;
 	text-align:left;
+	background-color: black !important;
+
+
 	
 }
 
@@ -14,12 +19,12 @@
   width: 480px;
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
-  font-weight: bold;
-text-align: center;
+  text-align: center;
   position: relative;
   color:gold;
   background-color: #000050;
-/*  background-image: url("http://41.media.tumblr.com/754116daaee501ae103441bb06f50f22/tumblr_mqvzu0DpkI1sdgezwo3_400.png");*/
+
+  background-image: url("http://41.media.tumblr.com/754116daaee501ae103441bb06f50f22/tumblr_mqvzu0DpkI1sdgezwo3_400.png");
 
  
 
@@ -38,7 +43,7 @@ margin-top:0;
 
 .input {
 border-width: 2px;
-border-color: gold;
+border-color: white;
 background-color: black;
 color:white;
 width: 240px;
@@ -50,12 +55,14 @@ font-family: Courier New;
 
 h1 {
 	margin-bottom: 0;
-	font-size: 54px;
+	font-size: 104px;
 	font-family: Impact;
-	font-stretch: expanded;
-	   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 3px;
+	font-weight: bold;
+	   -webkit-text-fill-color: gold; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 3px;
    -webkit-text-stroke-color: black;
+   
+
 }
 
 .volunteerMatch {
@@ -68,17 +75,18 @@ text-align: center;
 }
 
 .button {
-
-background-color: black;
+background-color: red;
 color:white;
-font-family: Impact;
-font-weight: normal;
+      -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+font-family: Arial Black;
 text-decoration: none;
-width: 140px;
+width: 160px;
 height:50px;
-border-radius: 5px 2px 5px 2px;
+border-radius: 22px;
 border-width: 2px;
-font-size: 24px;
+font-size: 26px;
 cursor: pointer;
 border-color: gold;
+
 }
