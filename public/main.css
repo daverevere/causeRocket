@@ -1,0 +1,84 @@
+
+.text {
+	border-width: 10px;
+	border-color: gold;
+	border-radius: 5px;
+	padding: 10px;
+	text-align:left;
+	
+}
+
+.container {
+
+  margin: 0 auto;
+  width: 480px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+text-align: center;
+  position: relative;
+  color:gold;
+  background-color: #000050;
+/*  background-image: url("http://41.media.tumblr.com/754116daaee501ae103441bb06f50f22/tumblr_mqvzu0DpkI1sdgezwo3_400.png");*/
+
+ 
+
+}
+
+
+
+nav {
+font-weight: bold;
+display: inline-block;
+font-size: 20px;
+padding-top: 0px;
+margin-top:0;
+
+}
+
+.input {
+border-width: 2px;
+border-color: gold;
+background-color: black;
+color:white;
+width: 240px;
+height:30px;
+font-size: 18px;
+font-family: Courier New;
+}
+
+
+h1 {
+	margin-bottom: 0;
+	font-size: 54px;
+	font-family: Impact;
+	font-stretch: expanded;
+	   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: black;
+}
+
+.volunteerMatch {
+	background-color:white;
+}
+
+form {
+
+text-align: center;
+}
+
+.button {
+
+background-color: black;
+color:white;
+font-family: Impact;
+font-weight: normal;
+text-decoration: none;
+width: 140px;
+height:50px;
+border-radius: 5px 2px 5px 2px;
+border-width: 2px;
+font-size: 24px;
+cursor: pointer;
+border-color: gold;
+}

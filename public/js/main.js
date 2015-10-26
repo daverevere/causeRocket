@@ -11,12 +11,16 @@ angular.module('App')
 				templateUrl : '/html/home.html',
 				controller : 'mainController'
 			})
+			.when('/test:user', {
+				templateUrl : '/html/test.html',
+				controller : 'userController'
+			})
 			.when('/part1/:user', {
-				templateUrl : '/html/user.html',
+				templateUrl : '/html/intro.html',
 				controller : 'userController'
 			})
 			.when('/part2a/:user', {
-				templateUrl : '/html/part2a.html',
+				templateUrl : '/html/part1/extroversion.html',
 				controller : 'userController'
 			})
 			.when('/error', {
@@ -36,9 +40,7 @@ angular.module('App')
 
 angular.module('App')
 	.controller('mainController', ['$scope', '$http', '$location', function($scope, $http, $location){
-
-		$scope.title = "Adventure site"
-
+	$scope.title = "What To Do"
 		$http.get('/api/users')
 			.then(function(returnData){
 				$scope.users = returnData.data
@@ -49,7 +51,7 @@ angular.module('App')
 			$http.post('/api/users', $scope.newUser) 
 				.then(function(returnData){ 
 		
-				})
+		})
 
 		}
 
@@ -58,10 +60,9 @@ angular.module('App')
 
 		}
 
-		$scope.part2a = function(){
-			$location.path('/part2a/' + $scope.newUser.name)
 
-		}
+
+
 
 		$scope.part2b = function(){
 			$location.path('/part2b/' + $scope.newUser.name)
@@ -76,7 +77,7 @@ angular.module('App')
 	}])
 
 angular.module('App')
-	.controller('userController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
+	.controller('userController', ['$scope', '$http', '$routeParams', '$location', function($scope, $http, $routeParams, $location){
 		var userName = $routeParams.user
 
 	
@@ -85,6 +86,16 @@ angular.module('App')
 			.then(function(returnData){
 				$scope.user = returnData.data
 			})
+		$scope.part2a = function(){		
+			$location.path('/part2a/' + $scope.newUser.name)
+
+		}
+
+		$scope.home = function(){
+			$location.path('/')
+
+		}
+
 
 	}])
 

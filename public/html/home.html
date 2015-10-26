@@ -1,10 +1,12 @@
-<h3>{{title}}</h3>
 
+<p>For now, let's lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 <form ng-submit="createUser()">
-	<input ng-model="newUser.name" placeholder="Name">
+<p>Who are you, adventurer?</p>
+	<input class ="input" ng-model="newUser.name" placeholder="Your first name"><br>
+<p>From where do you begin your journey?</p>
+	<input class ="input" ng-model="newUser.city" placeholder="Your city or zip code"><br><br>
 
-
-	<input  type="submit" ng-click="start()">
+	<input  class ="button" type="submit" ng-click="start()" value ="Strike out!">
 </form>
 
 
