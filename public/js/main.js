@@ -156,11 +156,12 @@ angular.module('App')
 
 angular.module('App')
 	.controller('mainController', ['$scope', '$http', '$location', function($scope, $http, $location){
+	
 	$scope.title = "What To Do"
 		$http.get('/api/users')
 			.then(function(returnData){
 				$scope.users = returnData.data
-$http.delete
+
 		})
 		$scope.createUser = function(){
 
@@ -171,6 +172,7 @@ $http.delete
 		$scope.start = function(){
 			$http.post('/api/users', $scope.newUser).then(function  (returnData) {
 				$scope.tempUser = returnData.data
+				
 			}) 
 
 			$location.path('/intro/' + $scope.newUser.name)
@@ -192,6 +194,7 @@ angular.module('App')
 		$http.get('/api/users/' + userName)
 			.then(function(returnData){
 				$scope.user = returnData.data
+				console.log("lher", $scope.user)
 			})
 		$scope.extroversion = function(){		
 			$location.path('/extroversion/' + $scope.user.name)
@@ -306,6 +309,7 @@ angular.module('App')
 
 		}
 		$scope.home = function(){
+			$http.delete('/api/users')
 			$location.path('/')
 
 		}

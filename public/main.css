@@ -8,6 +8,8 @@
 	padding-color: gold !important;
 	text-align:left;
 	background-color: black !important;
+	padding-bottom: 25px;
+	margin: 20px auto;
 
 
 	
@@ -16,7 +18,7 @@
 .container {
 
   margin: 0 auto;
-  width: 480px;
+  width: 500px;
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
   text-align: center;
@@ -33,6 +35,12 @@
 .rocket {
 
 /*float: right;*/
+   position: absolute;
+max-height: 200px;
+max-width: 200px;
+width: 60px;
+height: 110px;
+
 
 }
 
@@ -60,16 +68,39 @@ font-family: Courier New;
 
 h1 {
 	margin-bottom: 0;
-	font-size: 64px;
+	padding-bottom: 0;
+	line-height: 1;
+	font-size: 84px;
+	text-align: left;
 	font-family: Impact;
 	font-weight: bold;
-	   -webkit-text-fill-color: gold; /* Will override color (regardless of order) */
-      -webkit-text-stroke-width: 3px;
+	-webkit-text-fill-color: gold; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 3px;
    -webkit-text-stroke-color: black;
+  /* display: inline-block;*/
+   position: relative;
    
 
 }
 
+h2 {
+font-size: 22px;
+
+
+}
+
+i {
+font-size: 20px;
+color: white;
+font-family: Arial Black;
+line-height: 0;
+margin-bottom: 10px;
+padding-bottom: 10px;
+text-align: left;
+margin-left: 0;
+padding-left: 0;
+
+}
 .volunteerMatch {
 	background-color:white;
 }
@@ -79,19 +110,62 @@ form {
 text-align: center;
 }
 
+
 .button {
 background-color: red;
 color:white;
-      -webkit-text-stroke-width: 2px;
-   -webkit-text-stroke-color: black;
-font-family: Arial Black;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+font-family: Impact;
 text-decoration: none;
-width: 160px;
-height:50px;
-border-radius: 22px;
+overflow:hidden;
+word-wrap: break-word;
+width: auto;
+height:auto;
+border-radius: 6px;
 border-width: 2px;
 font-size: 26px;
 cursor: pointer;
 border-color: gold;
+-webkit-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
+-moz-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
+box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
+display: inline-block;
+text-align: center;
+}
 
+.go {
+background-color: red;
+color:white;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+font-family: Arial Black;
+text-decoration: none;
+overflow:hidden;
+word-wrap: break-word;
+width: auto;
+height:auto;
+border-radius: 6px;
+border-width: 2px;
+font-size: 26px;
+cursor: pointer;
+border-color: gold;
+-webkit-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
+-moz-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
+box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
+display: inline-block;
+text-align: center;
+}
+
+}
+
+
+.home {
+height:50px;
+width: 210px;
+padding-bottom: 5px;
+margin: 0 0 5px 0;
+position: relative;
+text-align: center;
+left: 125px;
 }

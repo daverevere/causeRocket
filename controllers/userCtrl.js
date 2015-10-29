@@ -33,8 +33,17 @@ var findUsers = function(req, res) {
 	}
 
 }
+function deleteUsers (req,res) {
+	User.remove({}, function(err) { //must have a function call here
+		//remove is a method in mongoose to remove contents of a collection
+		//the brackets are empty because we're saying delete all of the collection's contents, not just a specific property
+	   
+	});
+	
+}
 
 module.exports = {
 	createUser : createUser,
 	findUsers : findUsers,
+	deleteUsers : deleteUsers,
 }
