@@ -160,6 +160,7 @@ angular.module('App')
 		$http.get('/api/users')
 			.then(function(returnData){
 				$scope.users = returnData.data
+$http.delete
 		})
 		$scope.createUser = function(){
 
