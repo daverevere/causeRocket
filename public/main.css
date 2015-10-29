@@ -2,8 +2,8 @@
 .text {
 /*	border-width: 10px !important;
 	border-color: gold !important;*/
-	border: 4px solid white;
-	border-radius: 5px;
+	border: 7px solid white;
+	border-radius: 7px;
 	padding: 10px;
 	padding-color: gold !important;
 	text-align:left;
@@ -30,6 +30,11 @@
 
 }
 
+.rocket {
+
+/*float: right;*/
+
+}
 
 
 nav {
@@ -55,7 +60,7 @@ font-family: Courier New;
 
 h1 {
 	margin-bottom: 0;
-	font-size: 84px;
+	font-size: 64px;
 	font-family: Impact;
 	font-weight: bold;
 	   -webkit-text-fill-color: gold; /* Will override color (regardless of order) */
