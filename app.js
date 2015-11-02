@@ -21,7 +21,7 @@ app.post('/api/users', userCtrl.createUser)
 app.get('/api/users', userCtrl.findUsers)
 app.get('/api/users/:userName', userCtrl.findUsers)
 
-var port = 3000
+var port = 80
 app.listen(port, function(){
   console.log('Server running on port ' + port);
 
