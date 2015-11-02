@@ -161,7 +161,7 @@ angular.module('App')
 angular.module('App')
 	.controller('mainController', ['$scope', '$http', '$location', function($scope, $http, $location){
 	
-	$scope.title = "What To Do"
+	$scope.title = "Cause Rocket"
 		$http.get('/api/users')
 			.then(function(returnData){
 				$scope.users = returnData.data
