@@ -1,7 +1,18 @@
-<h2>Extroversion-Sensing {{user.name}}</h2>
+<h2>You joined the Jump Contest</h2>
 
-				<p>This is another sample paragraph. Now you have another choice:</p><br>
-				<br>
-				<button class ="button" ng-click="esFeeling()">Go here</button><button class ="button" ng-click="esThinking()">or go here</button><br><br>
+				<p>You whoop with delight as you bound lightly towards the circle of creatures in the middle of the meadow. A purple blob with eyes and a towering, shaggy creature with floppy ears make room for you in between them. The shaggy one claps you on the back with a paw the size of your body.</p>
+				<p>"Welcome, newcomer!" he booms. "I'm Belcor, the master of ceremonies."
+				<p>"I'm {{user.name}}," you tell him. "I can't wait to join the fun!"</p>
+				<p>Belcor laughs warmly and pushes you gently into the middle of the arena. The ground here turns to a black, stretchy material. A trampoline, you realize. A long-snouted, furry creature with one giant foot, bounces in the center.</p>
+				<p>"Skyfoot never been beaten," he boasts in a proud, gravelly voice. "Try your best, but Skyfoot lives for jump!"
+				<p>"Our first contestants!" Belcor calls. "Skyfoot, the undefeated champion, and the brave newcomer, {{user.name}}! The rules are simple. Whoever jumps the highest in one minute, wins! Ready? Jump!"</p>
+				<p>The pulsing star music speeds up as you and Skyfoot bounce up with all your might. You scream with excitement as you soar a hundred feet in the air. Skyfoot jumps higher by only a few feet, howling with pleasure.</p>
+				<p>As you begin to fall back down, you consider your next move.</p>
+				<p>Should you hold back and just enjoy the fun of low-gravity trampoline jumping? It's clear that winning means more to Skyfoot than it does to you. Are you concerned about how disappointed he would feel if you actually won?</p>
+				<p>Or, should you give this next jump all you've got? It's only logical that the best jumper should win a jumping contest, after all. Skyfoot even challenged you to try your best. Would he really want to win any other way?</p>
+				
+				<div class ="buttonDiv">
+				<button class ="button" ng-click="esFeeling()">Let Skyfoot win</button><button class ="button" ng-click="esThinking()">Give it all you've got</button><br><br>
 
 				<input type="Submit" value="START OVER" ng-click="home()" class ="button home" ></input>
+				</div>

@@ -11,17 +11,20 @@
 	padding-bottom: 25px;
 	margin: 20px auto;
 
-
 	
 }
 
+br {
+
+line-height: 10%;
+}
 .container {
 
   margin: 0 auto;
-  width: 500px;
+  width: 720px;
   font-family: "Courier New", Courier, monospace;
   font-size: 18px;
-  text-align: center;
+  text-align: left;
   position: relative;
   color:gold;
   background-color: #000050;
@@ -34,12 +37,14 @@
 
 .rocket {
 
-/*float: right;*/
-position: absolute;
-max-height: 200px;
-max-width: 200px;
-width: 60px;
-height: 110px;
+
+position:absolute;
+display: inline;
+max-height: 300px;
+max-width: 300px;
+width: 80px;
+height: 140px;
+	margin-top: 15px;
 
 
 }
@@ -63,22 +68,26 @@ width: 240px;
 height:30px;
 font-size: 18px;
 font-family: Courier New;
+position: relative;
+display: inline;
 }
 
 
 h1 {
+	margin-top: 5px;
 	margin-bottom: 0;
 	padding-bottom: 0;
-	line-height: 1;
-	font-size: 84px;
-	text-align: left;
+	line-height: 1.2;
+	font-size: 114px;
 	font-family: Impact;
 	font-weight: bold;
 	-webkit-text-fill-color: gold; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 3px;
    -webkit-text-stroke-color: black;
-  /* display: inline-block;*/
+   display: inline;
    position: relative;
+
+
    
 
 }
@@ -91,10 +100,10 @@ text-align: center;
 }
 
 i {
-font-size: 20px;
+font-size: 30px;
 color: white;
 font-family: Arial Black;
-line-height: 0;
+line-height: .8;
 margin-bottom: 10px;
 padding-bottom: 10px;
 text-align: left;
@@ -110,7 +119,12 @@ form {
 
 text-align: center;
 }
+.buttonDiv {
 
+text-align: center;
+position: relative;
+
+}
 
 .button {
 background-color: red;
@@ -118,7 +132,7 @@ color:white;
 -webkit-text-stroke-width: 2px;
 -webkit-text-stroke-color: black;
 font-family: Impact;
-text-decoration: none;
+/*text-decoration: none;*/
 overflow:hidden;
 word-wrap: break-word;
 width: auto;
@@ -135,51 +149,32 @@ display: inline-block;
 text-align: center;
 position: relative;
 margin: 10px;
-left: 4.4125em
+/*left: 4.4125em*/
 }
 
 .button:hover {
 border-color: white;
+color:gold;
 
 }
 
 .begin {
-left: 0em
+left: 0em;
+font-size: 56px;
+
 }
 
 
 .go {
-background-color: red;
-color:white;
-   -webkit-text-stroke-width: 2px;
-   -webkit-text-stroke-color: black;
-font-family: Impact;
-text-decoration: none;
-overflow:hidden;
-word-wrap: break-word;
-width: auto;
-height:auto;
-border-radius: 6px;
-border-width: 2px;
-font-size: 26px;
-cursor: pointer;
-border-color: gold;
--webkit-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
--moz-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
-display: inline-block;
-text-align: center;
-position: relative;
-left: 4.8525em
+
+left: 8.8525em
 }
 
-.go:hover {
-border-color: white;
-}
+
 
 
 
 .home {
 position: relative;
-left: 6.4125em
+/*left: 9.4125em*/
 }

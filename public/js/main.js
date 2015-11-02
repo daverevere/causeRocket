@@ -19,6 +19,10 @@ angular.module('App')
 				templateUrl : '/html/intro.html',
 				controller : 'userController'
 			})
+			.when('/intro2/:user', {
+				templateUrl : '/html/intro2.html',
+				controller : 'userController'
+			})
 			.when('/extroversion/:user', {
 				templateUrl : '/html/part1/extroversion.html',
 				controller : 'userController'
@@ -196,6 +200,10 @@ angular.module('App')
 				$scope.user = returnData.data
 				console.log("lher", $scope.user)
 			})
+		$scope.intro2 = function(){		
+			$location.path('/intro2/' + $scope.user.name)
+
+		}
 		$scope.extroversion = function(){		
 			$location.path('/extroversion/' + $scope.user.name)
 
