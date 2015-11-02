@@ -10,7 +10,6 @@
 	background-color: black !important;
 	padding-bottom: 25px;
 	margin: 20px auto;
-
 	
 }
 
@@ -28,11 +27,8 @@ line-height: 10%;
   position: relative;
   color:gold;
   background-color: #000050;
-
   background-image: url("http://41.media.tumblr.com/754116daaee501ae103441bb06f50f22/tumblr_mqvzu0DpkI1sdgezwo3_400.png");
-
  
-
 }
 
 .rocket {
@@ -44,8 +40,7 @@ max-height: 300px;
 max-width: 300px;
 width: 80px;
 height: 140px;
-	margin-top: 15px;
-
+margin-top: 15px;
 
 }
 
@@ -81,14 +76,11 @@ h1 {
 	font-size: 114px;
 	font-family: Impact;
 	font-weight: bold;
-	-webkit-text-fill-color: gold; /* Will override color (regardless of order) */
-    -webkit-text-stroke-width: 3px;
-   -webkit-text-stroke-color: black;
+-webkit-text-fill-color: gold; /* Will override color (regardless of order) */
+-webkit-text-stroke-width: 3px !important;
+-webkit-text-stroke-color: black !important;
    display: inline;
    position: relative;
-
-
-   
 
 }
 
@@ -127,7 +119,7 @@ position: relative;
 }
 
 .button {
-background-color: red;
+-webkit-background-color:red;
 color:white;
 -webkit-text-stroke-width: 2px;
 -webkit-text-stroke-color: black;
@@ -142,9 +134,9 @@ border-width: 2px;
 font-size: 26px;
 cursor: pointer;
 border-color: gold;
--webkit-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
--moz-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3);
+-webkit-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3) !important;
+-moz-box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3) !important;
+box-shadow: 0px 9px 0px rgba(200, 11, 2, 0.5), 0px 9px 25px rgba(0, 0, 0, .3) !important;
 display: inline-block;
 text-align: center;
 position: relative;
@@ -164,15 +156,10 @@ font-size: 56px;
 
 }
 
-
 .go {
 
 left: 8.8525em
 }
-
-
-
-
 
 .home {
 position: relative;
